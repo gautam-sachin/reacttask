@@ -1,0 +1,25 @@
+.maindiv {
+    width: 1200px;
+    height: 60px;
+    background-color: rgb(92, 42, 107);
+    margin-left: 35px;
+}
+
+.maindiv h2 {
+    color: aliceblue;
+    font-size: 50px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.btn {
+    background-color: #177a41;
+    height: 30px;
+    font-size: 20px;
+    color: aliceblue;
+    border: 1px solid #177a41;
+    border-radius: 5px;
+    float: right;
+    margin-top: -80px;
+    margin-right: 10px;
+}

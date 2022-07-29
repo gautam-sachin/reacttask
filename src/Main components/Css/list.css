@@ -1,0 +1,45 @@
+.listdiv{
+    margin-top: 10px;
+    margin-left: 310px;
+}
+.table {
+    border: 1px solid #CCC;
+    border-collapse: collapse;
+    text-align: center;
+}
+.chart{
+    margin-left: 300px;
+    width: 700px;
+    height: 500px;
+    background-color: burlywood;
+    margin-top: 100px;
+}
+.span{
+    width: 40px;
+    height: 400px;
+    background-color: aquamarine;
+    margin-left: 50px;
+}
+.selectOption{
+    width: 100px;
+    height: 30px;
+}
+.pagecenter{
+    margin-left: 150px;
+    margin-top: 10px;
+}
+.dropdown{
+    margin-top: 100px;
+    float: left;
+}
+#c h2 {
+    margin-left: -180px;
+}
+#c p {
+    margin-left: -180px;
+}
+.table{
+    float:left;
+    margin-left: -180px;
+    width: 1000px;
+}
