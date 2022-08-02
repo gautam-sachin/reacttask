@@ -9,7 +9,8 @@ export default function InputBox(props) {
         name: '',
         cost: '',
         date: '',
-        category: ''
+        category: '',
+       
     });
 
 // inputBox
@@ -30,7 +31,7 @@ export default function InputBox(props) {
             localStorage.setItem("item", JSON.stringify(oldData));
             alert("success")
     }
-
+    
   // useEffect
     useEffect(() => {
         if (indexId !== null) {
@@ -46,10 +47,11 @@ export default function InputBox(props) {
     const update = () => {
         const update = JSON.parse(localStorage.getItem("item"));
         update[indexId] = data;
-        localStorage.setItem('item', JSON.stringify(update))
+       window.localStorage.setItem('item', JSON.stringify(update))
         alert("update")
     }
 
+ 
     //jsx code
     return (
         <>
@@ -71,7 +73,7 @@ export default function InputBox(props) {
                                                
                                                 <div className="mb-4 pb-2">
                                                     <div className="form-outline form-white">
-                                                        <input type="text" id="form3Examplea3" name="Category"value={data.Category} onChange={inputBox} className="form-control form-control-lg" />
+                                                        <input type="text" id="form3Examplea3" name="category"value={data.category} onChange={inputBox} className="form-control form-control-lg" />
                                                         <label className="form-label" >Category</label>
                                                     </div>
                                                 </div>

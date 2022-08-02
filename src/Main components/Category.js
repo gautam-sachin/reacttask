@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 export default function Category() {
     const [data, setData] = useState({
@@ -11,8 +11,11 @@ export default function Category() {
     }
 
     // categoryData function
+    useEffect(()=>{
+        
+    })
     const categoryData = () => {
-        if (data.category) {
+      
             var newData = data;
             if (localStorage.getItem("category") == null) {
                 localStorage.setItem("category", "[]")
@@ -21,11 +24,6 @@ export default function Category() {
             oldData.push(newData);
             localStorage.setItem("category", JSON.stringify(oldData));
             alert("category Added");
-            setData("")
-        }
-        else {
-            alert("fail")
-        }
     }
      
     // jsx code
